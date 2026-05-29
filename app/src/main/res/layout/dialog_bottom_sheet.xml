@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어떤 부위를 운동할까요?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="24dp">
+
+        <CheckBox android:id="@+id/cb_chest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="가슴" android:textSize="16sp" android:layout_margin="8dp"/>
+        <CheckBox android:id="@+id/cb_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="등" android:textSize="16sp" android:layout_margin="8dp"/>
+        <CheckBox android:id="@+id/cb_legs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="하체" android:textSize="16sp" android:layout_margin="8dp"/>
+        <CheckBox android:id="@+id/cb_shoulder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="어깨" android:textSize="16sp" android:layout_margin="8dp"/>
+        <CheckBox android:id="@+id/cb_arms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="팔" android:textSize="16sp" android:layout_margin="8dp"/>
+        <CheckBox android:id="@+id/cb_abs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="복근" android:textSize="16sp" android:layout_margin="8dp"/>
+        <CheckBox android:id="@+id/cb_cardio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏃‍♂️유산소" android:textSize="16sp" android:layout_margin="8dp" android:textColor="#F44336" android:textStyle="bold"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_start_record"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="선택한 부위 운동 기록하기"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"/>
+</LinearLayout>
